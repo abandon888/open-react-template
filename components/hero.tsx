@@ -71,11 +71,12 @@ export default function Hero() {
           </div>
 
           <ModalVideo
+            //todo: change the video thumb image
             thumb={VideoThumb}
             thumbWidth={1024}
             thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
+            thumbAlt="海洋视频"
+            video="/videos/video1.mp4"
             videoWidth={1920}
             videoHeight={1080}
           />
