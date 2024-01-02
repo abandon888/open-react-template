@@ -33,13 +33,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
-        <IntlProvider locale="en">
-          <div className="flex flex-col min-h-screen overflow-hidden">
-            <Header />
-            {children}
-            {/* <Banner /> */}
-          </div>
-        </IntlProvider>
+        <div className="flex flex-col min-h-screen overflow-hidden">
+          <Header />
+          {children}
+          {/* <Banner /> */}
+        </div>
       </body>
     </html>
   )

@@ -28,14 +28,14 @@ export default function Header() {
                 <Link
                   href="/signin"
                   className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">
-                  Sign in
+                  登录
                 </Link>
               </li>
               <li>
                 <Link
                   href="/signup"
                   className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">
-                  Sign up
+                  注册
                 </Link>
               </li>
             </ul>
