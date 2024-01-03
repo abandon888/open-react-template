@@ -25,9 +25,7 @@ export default function Footer() {
                 </Link>
               </div>
               <div className="text-gray-400">
-                Lorem ipsum is placeholder text commonly used in the graphic,
-                print, and publishing industries for previewing layouts and
-                visual mockups.
+                海纳百川——海洋时空数据管理系统面向海洋知识图谱数据库OceanNetwork，通过知识图谱等相关技术，进行海洋环境数据的抽取、表示、存储、融合等，构建海洋知识体系，实现海洋文本数据到知识图谱的抽象转换技术
               </div>
             </div>
 
@@ -35,16 +33,16 @@ export default function Footer() {
             <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
               {/* 2nd block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Products</h6>
+                <h6 className="text-gray-200 font-medium mb-1">关于我们</h6>
                 <ul>
                   <li className="mb-1">
                     <Link
                       href="/"
                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
-                      Web Studio
+                      海纳百川后台管理系统
                     </Link>
                   </li>
-                  <li className="mb-1">
+                  {/* <li className="mb-1">
                     <Link
                       href="/"
                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
@@ -57,12 +55,12 @@ export default function Footer() {
                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
                       Programming Forms
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
               {/* 3rd block */}
-              <div className="text-sm">
+              {/* <div className="text-sm">
                 <h6 className="text-gray-200 font-medium mb-1">Resources</h6>
                 <ul>
                   <li className="mb-1">
@@ -101,10 +99,10 @@ export default function Footer() {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
               {/* 4th block */}
-              <div className="text-sm">
+              {/* <div className="text-sm">
                 <h6 className="text-gray-200 font-medium mb-1">Company</h6>
                 <ul>
                   <li className="mb-1">
@@ -143,7 +141,7 @@ export default function Footer() {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -222,7 +220,7 @@ export default function Footer() {
 
             {/* Copyrights note */}
             <div className="text-gray-400 text-sm mr-4">
-              &copy; Cruip.com. All rights reserved.
+              &copy; wangyuhan.xyz. All rights reserved.
             </div>
           </div>
         </div>
