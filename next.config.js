@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     domains: ['cdn.onc-prod.intergalactic.space'],
   },
-  output: 'export',
+  // output: 'export',
 }
 
 module.exports = nextConfig
