@@ -12,14 +12,77 @@ export default function Page2() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h1 className="h1">什么是海洋</h1>
+            <h1 className="text-5xl font-bold text-white mb-4">
+              什么是海洋,为什么是我们
+            </h1>
+            <p className="text-xl text-purple-600">
+              探索海洋的奥秘，了解它的重要性和我们对它的依赖。
+            </p>
           </div>
           {/* Page Content */}
-          <div className="max-w-3xl mx-auto whitespace-pre-wrap">
-            海是由大量咸水组成的水体，四周邻接陆地。广义上的海指由地球海洋咸水水域组成的部分，一般把它看待为一整个世界洋，或是由若干大洋组合而成的水体。较小的次要海区（如地中海）或大型盐湖（如里海），则一般以“海”命名。这些海与大洋相比，没有独立的潮汐以及海流。海可调节地球的气候，在水循环、碳循环、氮循环中均扮演着重要的角色。虽然人类从史前时代就开始在大海中旅行并探索未知的海域，不过现代海洋学研究从1870年代英国的挑战者号远征才开始。
-            由于大陆漂移，北半球现在的陆地和海洋之间的比例较为平均（约为2:3），但南半球绝大多数的地方都被海洋覆盖（1:4.7）。海水中溶解的物质主要是氯化钠，约占全部溶解物质的85％，剩下的还有镁、钙、钾、汞等构成的盐类。开放水域的盐度（盐类物质的质量）一般在3.5％左右，不过靠近内陆的水域、大河口附近的盐度较低，深海中的盐度则较高。海洋中各区域盐分及温度有差异，因而产生温盐环流。海流的形成归因于受风和潮汐所推动的海浪，局部海平面的变化则是因月球和太阳的引力所致：这些的方向都会受到地球表面和海底的大陆块，以及地球的自转（科里奥利力）所影响。火山喷发、大陆板块移动造成的海底地震、大型山体滑坡、陨石撞击等均可引发海啸。
-            陆地向海平面下延伸形成大陆架，为海洋接近陆地的浅海区域，大陆架海域富含养分，是许多海洋生物的栖息地，向人类提供大量食物来源——主要为鱼类，并有贝类、海洋哺乳动物及海藻——透过野生捕捞及水产养殖获取。大型热带珊瑚礁的生物多样性相当高。深海海域捕鲸业曾相当发达，随着鲸的数量大幅减少，国际社会国签署条约限制捕捞，国际捕鲸委员会于1986年起禁止大多数商业捕捞。海洋中的生物并非仅生长在阳光照射的到的水域，即使在海底深处，压力很大的超深渊带也有生物，其营养来源来自深海热泉，形成独特的生态系统，这类生物称为嗜极生物。无生源论认为，生命起源可能是来是海洋，海洋微生物席符合地球大气的大氧化事件，而动物及植物的起源也都来自海上。
-            海洋对人类贸易、旅游、矿物开采、能源生产等方面均相当重要，亦为战争的场域。位于海岸的城市可能受地震或火山活动造成的海啸影响，热带海域为热带气旋、台风及气旋的活跃区域。海洋对于人类文化产生重要影响，从早期神话里的水神到荷马史诗，再到哥伦布大交换引发的巨大转变，从海葬到松尾芭蕉的俳句再到超现实主义的海洋艺术；以及《苏格兰的牢骚》中船夫号子激励人心的音乐到尼古拉·安德烈耶维奇·里姆斯基-科萨科夫的《舍赫拉查达》再到张惠妹的《听海》。海上的休闲活动包括游泳、潜水、冲浪及帆船运动等。但随着人口增加、工业化及精耕细作造成现今的海洋污染，海洋因吸收大气中增加的二氧化碳，导致PH值下降，即海洋酸化；海洋资源共享造成过度捕鱼的问题仍在增加。
+          <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+            <div className="px-4 py-5 sm:px-6">
+              <h2 className="text-lg leading-6 font-medium text-gray-900">
+                海洋的定义
+              </h2>
+              <p className="mt-1 max-w-2xl text-sm text-gray-500">
+                海洋是地球上最大的生命体，覆盖了地球表面超过70%的面积。
+              </p>
+            </div>
+            <div className="border-t border-gray-200">
+              <dl>
+                <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                  <dt className="text-sm font-medium text-gray-500">重要性</dt>
+                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    海洋对地球气候系统、生物多样性和人类社会都有着重要影响。
+                  </dd>
+                </div>
+                <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                  <dt className="text-sm font-medium text-gray-500">威胁</dt>
+                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    海洋正面临着过度捕捞、污染和气候变化等多重威胁。
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          {/* Page Content2 */}
+          <div className="bg-white shadow overflow-hidden sm:rounded-lg mt-8">
+            <div className="px-4 py-5 sm:px-6">
+              <h2 className="text-lg leading-6 font-medium text-gray-900">
+                我们是？
+              </h2>
+              <p className="mt-1 max-w-2xl text-sm text-gray-500">
+                通过海纳百川，我们致力于搭建一个数字桥梁，连接广大海洋爱好者与深海的神秘世界。我们的使命是通过数据的力量，揭开海洋的每一层面纱，让人们不仅了解海洋的美丽，更理解它的脆弱和我们对它的影响。
+              </p>
+            </div>
+            <div className="border-t border-gray-200">
+              <dl>
+                <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                  <dt className="text-sm font-medium text-gray-500">
+                    我们来自
+                  </dt>
+                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    我们的团队由一群对海洋科学充满热情的专业人士组成，包括海洋生物学家、数据分析师、教育工作者和环保活动家。
+                  </dd>
+                </div>
+                <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                  <dt className="text-sm font-medium text-gray-500">内容</dt>
+                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    我们致力于提供最准确、最深入的内容，从海洋科学的最新进展到深海生物的奇妙生活，无一不是为了让你更接近海洋的真实状态。
+                  </dd>
+                </div>
+                <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                  <dt className="text-sm font-medium text-gray-500">
+                    使命与你
+                  </dt>
+                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    这是一个故事的开始，也是我们共同责任的象征。欢迎你成为这个故事的一部分。加入我们的旅程，一起探索、学习和保护我们的海洋。
+                  </dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </div>
       </div>
