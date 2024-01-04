@@ -5,7 +5,7 @@ import { Inter, Architects_Daughter } from 'next/font/google'
 import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
 import { IntlProvider } from 'react-intl'
-
+import { NextUIProvider } from '@nextui-org/react'
 // const inter = Inter({
 //   subsets: ['latin'],
 //   variable: '--font-inter',
@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={` antialiased bg-gray-900 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          {children}
+          <NextUIProvider>{children}</NextUIProvider>
           {/* <Banner /> */}
         </div>
       </body>
