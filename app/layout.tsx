@@ -6,6 +6,8 @@ import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
 import { IntlProvider } from 'react-intl'
 import { NextUIProvider } from '@nextui-org/react'
+import { Providers } from './providers'
+
 // const inter = Inter({
 //   subsets: ['latin'],
 //   variable: '--font-inter',
@@ -30,11 +32,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={` antialiased bg-gray-900 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          <NextUIProvider>{children}</NextUIProvider>
+          <Providers>{children}</Providers>
           {/* <Banner /> */}
         </div>
       </body>

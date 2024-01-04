@@ -9,7 +9,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Site branding */}
-          <div className="shrink-0 mr-4">
+          <Link className="shrink-0 mr-4" href="/">
             {/* Logo */}
             <Image
               src={logo}
@@ -18,7 +18,7 @@ export default function Header() {
               alt="Logo"
               className="rounded-lg shadow-2xl"
             />
-          </div>
+          </Link>
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
