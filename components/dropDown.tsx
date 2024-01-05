@@ -8,17 +8,23 @@ import {
   DropdownItem,
   Button,
 } from '@nextui-org/react'
-import { useRouter } from 'next/navigation'
-import { useRouter as routerPath } from 'next/router'
+import { useRouter, usePathname } from 'next/navigation'
 
 export default function DropDown() {
   const router = useRouter()
-  const nextRouter = routerPath()
+  const path = usePathname()
 
   const handleNavigation = (path: string) => {
     router.push(path)
   }
-  //判断是否为首页/，如果不是则跳转到首页
+
+  //导航到页面底部，柔和滚动
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth',
+    })
+  }
 
   return (
     <Dropdown>
@@ -45,11 +51,16 @@ export default function DropDown() {
             //导航到页面底部
 
             () => {
-              if (nextRouter.pathname !== '/') {
+              //判断是否为首页/，如果不是则跳转到首页
+              if (path !== '/') {
                 handleNavigation('/')
-                window.scrollTo(0, document.body.scrollHeight)
+                //等待页面跳转完成后再滚动到底部
+                setTimeout(() => {
+                  scrollToBottom()
+                }, 1000)
               } else {
-                window.scrollTo(0, document.body.scrollHeight)
+                //window.scrollTo(0, document.body.scrollHeight)
+                scrollToBottom()
               }
             }
           }>

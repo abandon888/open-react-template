@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Table,
   TableHead,
@@ -5,24 +7,24 @@ import {
   TableHeaderCell,
   TableBody,
   TableCell,
-  Text
-} from '@tremor/react';
+  Text,
+} from '@tremor/react'
 
 interface User {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
+  id: number
+  name: string
+  username: string
+  email: string
 }
 
 export default function UsersTable({ users }: { users: User[] }) {
   return (
-    <Table>
+    <Table title="海洋观测站点信息" color="grey">
       <TableHead>
         <TableRow>
-          <TableHeaderCell>Name</TableHeaderCell>
-          <TableHeaderCell>Username</TableHeaderCell>
-          <TableHeaderCell>Email</TableHeaderCell>
+          <TableHeaderCell>观测站点</TableHeaderCell>
+          <TableHeaderCell>海域</TableHeaderCell>
+          <TableHeaderCell>观测时间</TableHeaderCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -39,5 +41,5 @@ export default function UsersTable({ users }: { users: User[] }) {
         ))}
       </TableBody>
     </Table>
-  );
+  )
 }

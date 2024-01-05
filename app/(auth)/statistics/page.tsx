@@ -1,6 +1,7 @@
 import { Card, Title, Text } from '@tremor/react'
 import Search from './search'
 import UsersTable from './table'
+import Chart from './chart'
 
 interface User {
   id: number
@@ -39,6 +40,9 @@ export default async function Statistics() {
       <Search />
       <Card className="mt-6">
         <UsersTable users={users} />
+      </Card>
+      <Card className="mt-6">
+        <Chart />
       </Card>
     </main>
   )
