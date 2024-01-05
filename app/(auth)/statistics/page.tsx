@@ -13,30 +13,19 @@ interface User {
 const users: User[] = [
   {
     id: 1,
-    name: 'User One',
-    username: 'userone',
-    email: 'userone@example.com',
+    name: '站点一',
+    username: '南海海域',
+    email: '2023-12-31 23:59:59',
   },
-  {
-    id: 2,
-    name: 'User Two',
-    username: 'usertwo',
-    email: 'usertwo@example.com',
-  },
-  {
-    id: 3,
-    name: 'User Three',
-    username: 'userthree',
-    email: 'userthree@example.com',
-  },
+
   // 你可以添加更多的用户...
 ]
 
 export default async function Statistics() {
   return (
     <main className="p-4 md:p-10 mx-auto max-w-7xl mt-20">
-      <Title>Users</Title>
-      <Text>A list of users retrieved from a Postgres database.</Text>
+      <Title>数据统计</Title>
+      {/* <Text></Text> */}
       <Search />
       <Card className="mt-6">
         <UsersTable users={users} />
