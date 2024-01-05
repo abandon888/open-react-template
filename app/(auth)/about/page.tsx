@@ -5,7 +5,7 @@ export const metadata = {
 
 import Link from 'next/link'
 
-export default function Page2() {
+export default function About() {
   return (
     <section className="relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

@@ -31,7 +31,7 @@ const users: User[] = [
   // 你可以添加更多的用户...
 ]
 
-export default async function IndexPage() {
+export default async function Statistics() {
   return (
     <main className="p-4 md:p-10 mx-auto max-w-7xl mt-20">
       <Title>Users</Title>
