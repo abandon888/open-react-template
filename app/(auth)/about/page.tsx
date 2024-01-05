@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Sign Up - Open PRO',
-  description: 'Page description',
+  title: '关于我们 - 海纳百川',
+  description: '海洋时空数据管理系统',
 }
 
 import Link from 'next/link'
